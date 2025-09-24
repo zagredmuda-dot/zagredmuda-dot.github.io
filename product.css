@@ -1,0 +1,129 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+ 
+  color: #fff;
+}
+#back{
+    background-image: url(background.jpg);
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+ 
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1rem;
+}
+
+/* Sections */
+section {
+  padding: 50px 10%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #001f3f;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.shop .grid,
+.products .grid,
+.models .grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Product Cards */
+.products .card {
+  text-align: center;
+}
+
+.products .card p {
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+.products .card span {
+  color: #e63946;
+  font-weight: bold;
+}
+.footer{
+  background-color:#001f3f ;
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+.social-icons i{
+  display: inline-block;
+  margin-right: 4pc;
+  margin-left: 2pc;
+  margin-top:0% ;
+  color: aliceblue;
+}
+.social-icons{
+  gap: 10pc;
+  text-align: center;
+
+}
