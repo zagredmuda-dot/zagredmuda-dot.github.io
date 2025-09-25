@@ -271,3 +271,20 @@ body {
         font-size: 2rem;
     }
 }
+#lol{
+    padding: 10px;
+    background-color: #3949ab;
+    font-style: arial;
+    color: black;
+
+}
+#lol:hover{
+    background-color: #2196f3;
+    color: white;
+    transition: 0.5s;
+}
+.big{
+    display: flex;
+    gap: 10px;
+    
+}

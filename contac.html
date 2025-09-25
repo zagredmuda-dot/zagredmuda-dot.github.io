@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br>
+        <h2>Real Estate Contact Form</h2>
+        
+        <form>
+            <div class="section">
+                <h3>Move-in Location</h3>
+                <div class="form-group">
+                    <label for="state">state</label>
+                    <select id="state" name="city">
+                        <option value="state">select state</option>
+                        <!-- Add more cities as needed -->
+                    </select>
+                    <script>
+                        const stateSelect = document.getElementById('state');
+                        const states = ['California', 'Texas', 'Florida', 'New York', 'Illinois'];
+                        states.forEach(state => {
+                            const option = document.createElement('option');
+                            option.value = state;
+                            option.textContent = state;
+                            stateSelect.appendChild(option);
+                        });
+                      
+                    </script>
+                </div>
+                <div class="form-group">
+                    <label for="preferredAreas">Preferred Areas</label>
+                    <input type="text" id="preferredAreas" name="preferredAreas" placeholder="e.g., Downtown, Suburbs">
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Apartment Info</h3>
+                <div class="form-group">
+                    <label for="moveInDate">Desired Move-in Date</label>
+                    <input type="date" id="moveInDate" name="moveInDate" value="2024-10-18">
+                </div>
+                <div class="form-group">
+                    <label for="apartmentSize">Apartment Size</label>
+                    <select id="apartmentSize" name="apartmentSize">
+                        <option value="Studio">Studio</option>
+                        <script>
+                            const sizeSelect = document.getElementById('apartmentSize');
+                            const sizes = ['1 Bedroom', '2 Bedrooms', '3 Bedrooms', '4+ Bedrooms'];
+                            sizes.forEach(size => {
+                                const option = document.createElement('option');
+                                option.value = size;
+                                option.textContent = size;
+                                sizeSelect.appendChild(option);
+                            });
+                        </script>
+                        <!-- Add more sizes as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="maxPrice">Max Price</label>
+                    <select id="maxPrice" name="maxPrice">
+                        <option value="850">$850 (Our Minimum)</option>
+                        <script>
+                            const priceSelect = document.getElementById('maxPrice');
+                            const prices = ['$1000', '$1200', '$1500', '$2000', '$2500', '$3000+'];
+                            prices.forEach(price => {
+                                const option = document.createElement('option');
+                                option.value = price;
+                                option.textContent = price;
+                                priceSelect.appendChild(option);
+                            });
+                        </script>
+                        <!-- Add more prices as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pets">Pets</label>
+                    <select id="pets" name="pets">
+                        <option value="Cats">No</option>
+                        <script>
+                            const petsSelect = document.getElementById('pets');
+                            const petOptions = ['NO', 'Cats', 'Dogs', 'Both'];
+                            petOptions.forEach(pet => {
+                                const option = document.createElement('option');
+                                option.value = pet;
+                                option.textContent = pet;
+                                petsSelect.appendChild(option);
+                            });
+                        </script>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Contact Info</h3>
+                <div class="form-group">
+                    <label for="firstName">Name</label>
+                    <div class="name-group">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@exemple.com">
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="form-group">
+                    <label for="howFound">How did you find us?</label>
+                    <select id="howFound" name="howFound">
+                        <option value="Google">Google</option>
+                        <script>
+                            const foundSelect = document.getElementById('howFound');
+                            const foundOptions = ['Google', 'Friend/Family', 'Social Media', 'Advertisement', 'Other'];
+                            foundOptions.forEach(optionText => {
+                                const option = document.createElement('option');
+                                option.value = optionText;
+                                option.textContent = optionText;
+                                foundSelect.appendChild(option);
+                            });
+                        </script>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Special Requirements / Comments</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
